@@ -100,8 +100,9 @@ namespace JournalApp
 
         static string GetDateFromUser()
         {
-            Console.Write("Enter a date (MM/DD/YYYY): ");
-            return Console.ReadLine();
+            DateTime theCurrentTime = DateTime.Now;
+            string dateText = theCurrentTime.ToShortDateString();   
+            return dateText;
         }
     }
 }

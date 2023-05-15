@@ -60,8 +60,8 @@ namespace JournalApp
 
         public void Display()
         {
-            Console.WriteLine("Date: " + date);
-            Console.WriteLine("Prompt: " + prompt);
+            Console.Write("Date: " + date);//must display computer date
+            Console.WriteLine(" - Prompt: " + prompt);
             Console.WriteLine("Response: " + response);
             Console.WriteLine();
         }
